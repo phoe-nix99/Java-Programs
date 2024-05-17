@@ -12,7 +12,7 @@ pushelmnt(stk, 89);
 pushelmnt(stk, 90);  
 pushelmnt(stk, 11);  
 pushelmnt(stk, 45);  
-pushelmnt(stk, 18);  
+pushelmnt(stk, 18);
 //popping elements from the stack  
 popelmnt(stk);  
 popelmnt(stk);  
