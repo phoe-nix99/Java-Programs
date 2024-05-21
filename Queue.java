@@ -52,7 +52,8 @@ public class Queue{
 		while(true)
 		{
 			System.out.println("\n1.ADDQ\n2.DELQ\n3.DISPLAYQ\n4.EXIt\nEnter Choice");
-			Scanner sc=new Scanner(System.in);
+			@SuppressWarnings("resource")
+            Scanner sc=new Scanner(System.in);
 			int ch=sc.nextInt();
 			switch(ch)
 			{
