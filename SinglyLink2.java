@@ -81,11 +81,12 @@ class LList
 	}
 }
 
-public class SinglyLink1 {
+public class SinglyLink2 {
 
 	public static void main(String[] args) {
 		LList list=new LList();
-		Scanner sc=new Scanner(System.in);
+		@SuppressWarnings("resource")
+        Scanner sc=new Scanner(System.in);
 		while(true)
 		{
 			System.out.println("1. Insert\n2. Display\n3. Delete\n4. Exit\nEnter choice");
