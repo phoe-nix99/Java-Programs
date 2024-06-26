@@ -1,5 +1,3 @@
-
-
 import java.util.*;
 
 /*
@@ -44,6 +42,28 @@ class LList
 			temp.next=newNode;
 		}
 	}
+	void del(int d)
+	{
+		if(head==null)
+			System.out.println("List is Empty");
+		else
+		{
+			if(head.data==d)    // data is found at the very first node
+				head=head.next; // move head to point the next node i.e.; first node is deleted
+			else
+			{
+				Node temp=head;
+				while(temp.next!=null && temp.next.data!=d)
+				{
+					temp=temp.next;
+				}
+				if(temp.next==null)
+					System.out.println(d+" is not present in the List!");
+				else
+					temp.next=temp.next.next;
+			}
+		}
+	}
 	void display()
 	{
 		if(head==null)
@@ -66,21 +86,25 @@ public class SinglyLink1 {
 	public static void main(String[] args) {
 		LList list=new LList();
 		@SuppressWarnings("resource")
-        Scanner sc=new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 		while(true)
 		{
-			System.out.println("1. Insert\n2. Display\n3. Exit\nEnter choice");
+			System.out.println("1. Insert\n2. Display\n3. Delete\n4. Exit\nEnter choice");
 			int ch=sc.nextInt();
 			switch(ch)
 			{
-			 case 1:System.out.println("Enter data");
+			 case 1:System.out.println("Enter data to insert");
 			        int d=sc.nextInt();
 			        list.insert(d);
 			        System.out.println(d+" is added to the list");
 			        break;
 			 case 2:list.display();
 			        break;
-			 case 3:System.exit(0);
+			 case 3:System.out.println("Enter data to delete");
+		            d=sc.nextInt();
+		            list.del(d);
+			        break;
+			 case 4:System.exit(0);
 			 default:System.out.println("Wrong input!");
 				 
 			}
