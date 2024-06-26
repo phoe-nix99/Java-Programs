@@ -85,7 +85,6 @@ public class SinglyLink1 {
 
 	public static void main(String[] args) {
 		LList list=new LList();
-		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);
 		while(true)
 		{
