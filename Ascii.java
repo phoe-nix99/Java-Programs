@@ -9,7 +9,7 @@ public class Ascii {
                   System.out.println("Enter the String: ");
                   String a = sc.nextLine();
                   char [] b = a.toCharArray();
-                  for (int i = 0;i<b.length;i++){
+                  for (int i = 0;i < b.length; i ++){
      
                      char c = b[i];
                      int assci = c;
