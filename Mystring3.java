@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Arrays;
 
-class Ystring{
+class Ystring3{
     int i=0;
     int j;
     int count=0;
