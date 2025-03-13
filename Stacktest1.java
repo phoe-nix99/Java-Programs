@@ -27,7 +27,7 @@ System.out.println("empty stack");
 }  
 }  
 //performing push operation  
-@SuppressWarnings("unchecked")
+@SuppressWarnings({ "unchecked", "removal" })
 static void pushelmnt(@SuppressWarnings("rawtypes") Stack stk, int x)   
 {  
 //invoking push() method      
