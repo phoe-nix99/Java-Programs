@@ -21,6 +21,7 @@ class Main{
             j++;
         }
         System.out.println(count);
+        sc.close();
 
     }
 

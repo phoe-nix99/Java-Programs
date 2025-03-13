@@ -19,7 +19,7 @@ public class Ascii {
              }
              System.out.println("The sum of the letters are: "+f);
 
-             
+             sc.close();
 
     }
     
