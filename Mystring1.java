@@ -1,7 +1,6 @@
 import java.util.*;
 
 class Mystring{
-    Scanner sc = new Scanner(System.in);
     String name;
     int i;
     char rem;
@@ -21,43 +20,28 @@ class Mystring{
       
     }
 
-    void palli(){
+    void pali(){
         if (name.compareTo(hehe)==0){
-            System.out.println("\nThe given string is Pallindrome");
+            System.out.println("\nThe given string is Palindrome");
         }
         else{
-            System.out.println("\nThe given string is not Pallindrome");
+            System.out.println("\nThe given string is not Palindrome");
         }
   }
-
-  void check(String r, String l){
-
-    for (int u=0;u<r.length();u++){
-
-        for (int z=0;z<l.length();z++){
-
-            
-        }
-    } 
-
-  }
+  
  
 }
 
 public class Mystring1{
 
 public static void main(String[] args) {
-    @SuppressWarnings("resource")
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter The String: ");
     String  g = sc.nextLine();
     Mystring ob = new Mystring(g);
-    System.out.println("Enter The String: ");
-    String s = sc.nextLine();
-    @SuppressWarnings("unused")
-    Mystring obj = new Mystring(s);
     ob.rev();
-    ob.palli();
+    ob.pali();
+    sc.close();
     
 
 }
